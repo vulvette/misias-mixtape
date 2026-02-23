@@ -90,16 +90,21 @@ audio {
 
 .gif-anchor {
   position: fixed;
-  inset: 0;
+  bottom: 0;
+  right: 0;
+
+  width: 1px;
+  height: 1px;
+
   pointer-events: none;
   z-index: 999;
 }
 
 .bottom-right-gif {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
-  width: 120px;
+  bottom: 12px;
+  right: 12px;
+  width: 100px;
   height: auto;
 }
 
@@ -124,6 +129,11 @@ audio {
     width: 80px;
   }
 }
+
+* {
+  box-sizing: border-box;
+}
+
 </style> 
 </head>
 <body>
