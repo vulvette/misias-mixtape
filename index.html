@@ -8,63 +8,56 @@
   <link rel="icon" href="favicon.png">
   <style type="text/css">
 
-<style>
- 
-  html, body {
-  width: 100%2
+html, body {
+  margin: 0;
+  padding: 0;
   height: 100%;
-  margin: 0;
   overflow-x: hidden;
-  }
+}
 
-  body {
+body {
   background-image: url("stars5.gif");
-  margin: 0;
   min-height: 100vh;
   padding-bottom: 120px;
+}
 
-  display: flex;
-  justify-content: center;
-  }
-
-  .page {
+.page {
   width: 100%;
   max-width: 600px;
+  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  padding-top: 40px;
+  padding-top: 10px;
   gap: 10px;
 }
 
-  .top-content {
+.top-content {
   text-align: center;
 }
 
 .top-content img {
-  margin-top: 60px;
-  width: 100px;          
+  width: 100px;
   display: block;
-  margin: 0 auto;        
+  margin: 60px auto 0;
 }
 
 .top-content h1 {
-  margin-top: 12px;     
+  margin-top: 12px;
   font-family: Arial, Helvetica, sans-serif;
-    color: #ff00dd;
-    size: 20px;
+  color: #ff00dd;
 }
 
 .top-content p {
-  margin-top: 5px;      
+  margin-top: 5px;
   font-family: 'Courier New', Courier, monospace;
   color: #ff9266;
-  font-size: 1rem;      
-  max-width: 400px;     
+  font-size: 1rem;
+  max-width: 400px;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
 }
 
 .audio-section {
@@ -79,70 +72,59 @@
 
 .audio-item {
   width: 100%;
-  overflow: visible;
 }
 
 .audio-title {
   margin-bottom: 6px;
-  margin-left: 20px;
+  margin-left: 10px;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.95rem;
-  color: #ff00dd  ;
+  color: #ff00dd;
 }
 
 audio {
   width: 100%;
-  max-width: 100%;
   display: block;
 }
 
 .gif-anchor {
   position: fixed;
-  bottom: 16px;
-  right: 16px;
+  inset: 0;
+  pointer-events: none;
   z-index: 999;
 }
 
 .bottom-right-gif {
-  width: 100px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
   height: auto;
 }
 
-@media (max-width: 600px){
-  .body {
-    padding-bottom: 60px;
-  } 
+@media (max-width: 600px) {
 
-  .audio-section,
-  p {
+  body {
+    padding-bottom: 100px;
+  }
+
+  .top-content p,
+  .audio-section {
     max-width: 290px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .audio-title {
     font-size: 0.8rem;
   }
 
-  audio {
-    width: 100%;
-  }
-  
-  .gif-anchor {
-    inset: 0;
-    pointer-events: none;
-  }
-
   .bottom-right-gif {
-    position: absolute;
-    bottom: 12px;
-    right: 12px;
     width: 80px;
   }
 }
-
-
-  </style>  
+</style> 
 </head>
 <body>
   
@@ -231,6 +213,7 @@ audio {
     <div class="gif-anchor">
       <img src="mail.gif" class="bottom-right-gif" alt="">
     </div>
+  
 
   <script>
 
