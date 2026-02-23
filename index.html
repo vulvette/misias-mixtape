@@ -3,6 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Misia's Mixtape</title>
   <link rel="icon" href="favicon.png">
   <style type="text/css">
@@ -65,14 +66,18 @@
 }
 
 .audio-section {
+  width: 100%;
+  max-width: 350px;
+
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
 }
 
 .audio-item {
-  text-align: center;
+  width: 100%;
+  overflow: visible;
 }
 
 .audio-title {
@@ -82,6 +87,22 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.95rem;
   color: #ff00dd  ;
+}
+
+audio {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .audio-title {
+    font-size: 0.9rem;
+  }
+
+  .audio-section {
+    padding: 0 16px;
+  }
 }
 
 .bottom-right-gif {
